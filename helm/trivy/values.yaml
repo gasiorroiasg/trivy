@@ -52,6 +52,7 @@ affinity: {}
 tolerations: []
 
 trivy:
+  nossl: false
   # debugMode the flag to enable Trivy debug mode
   debugMode: false
   # gitHubToken the GitHub access token to download Trivy DB

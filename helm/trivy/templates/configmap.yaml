@@ -24,3 +24,7 @@ data:
 {{- if .Values.trivy.authUrl }}
   TRIVY_AUTH_URL: {{ .Values.trivy.authUrl | quote }}
 {{- end }}
+{{- if .Values.trivy.nonssl }}
+  TRIVY_NON_SSL: {{ .Values.trivy.nonssl | quote }}
+{{- end }}
+
