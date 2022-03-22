@@ -21,6 +21,6 @@ data:
 {{- if .Values.noProxy }}
   NO_PROXY: {{ .Values.noProxy | quote }}
 {{- end }}
-{{- if .Values.authUrl }}
+{{- if .Values.trivy.authUrl }}
   TRIVY_AUTH_URL: {{ .Values.trivy.authUrl | quote }}
 {{- end }}
